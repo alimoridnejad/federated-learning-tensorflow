@@ -1,0 +1,21 @@
+
+# dataset location
+data_dir: /home/ali/Documents/search/data/mslr_web10k/Fold1/
+
+# log info
+log_name: ranknet
+log_dir: /home/ali/Documents/search/tff/output/log/
+
+# Training parameters
+training_algo: default  # options: default, factor
+optimizer: adam
+window_size: 512
+batch_size: 128
+learning_rate: 0.001
+graph_mode: False
+epochs: 50
+
+sigma: 1.0
+dropout_rate: 0.25
+grad_clip: True
+clip_value: 1.0
